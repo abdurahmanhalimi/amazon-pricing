@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Infographic Pricing</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      width: 300px;
+      border-radius: 15px;
+      overflow: hidden;
+      color: #fff;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+    .card-header {
+      padding: 20px;
+      text-align: center;
+    }
+    .basic {
+      background: linear-gradient(45deg, #9c27b0, #e91e63);
+    }
+    .standard {
+      background: linear-gradient(45deg, #2196f3, #3f51b5);
+    }
+    .premium {
+      background: linear-gradient(45deg, #ff9800, #ff5722);
+    }
+    .price {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .features {
+      background: #fff;
+      color: #333;
+      padding: 20px;
+      flex-grow: 1;
+    }
+    .features ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .features li {
+      padding: 8px 0;
+      display: flex;
+      align-items: center;
+    }
+    .features li::before {
+      content: "✔";
+      color: green;
+      margin-right: 10px;
+    }
+    .features li.cross::before {
+      content: "✖";
+      color: red;
+    }
+    .buy-btn {
+      background: #222;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .buy-btn:hover {
+      background: #000;
+      transform: scale(1.05);
+    }
+    @media (max-width: 768px) {
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- BASIC -->
+    <div class="card basic">
+      <div class="card-header">
+        <h2>BASIC</h2>
+        <div>$20 - 9 Listings</div>
+        <div class="price">$20.00</div>
+        <div>Per Month</div>
+      </div>
+      <div class="features">
+        <ul>
+          <li>Delivery Time: 9 days</li>
+          <li>Number of Revisions: 2</li>
+          <li class="cross">Number of Data Points: 0</li>
+          <li>Commercial Use</li>
+          <li>Post to Infographic Sites</li>
+        </ul>
+      </div>
+      <a class="buy-btn" href="https://t.me/amzlistingdesign?text=Hello!%20I%20want%20the%20BASIC%20package." target="_blank">Buy Now</a>
+    </div>
+
+    <!-- STANDARD -->
+    <div class="card standard">
+      <div class="card-header">
+        <h2>STANDARD</h2>
+        <div>$25 - Listings & A+ (9 listings & 7 A+)</div>
+        <div class="price">$25.00</div>
+        <div>Per Month</div>
+      </div>
+      <div class="features">
+        <ul>
+          <li>Delivery Time: 12 days</li>
+          <li>Number of Revisions: 2</li>
+          <li class="cross">Number of Data Points: 0</li>
+          <li>Commercial Use</li>
+          <li>Post to Infographic Sites</li>
+        </ul>
+      </div>
+      <a class="buy-btn" href="https://t.me/amzlistingdesign?text=Hello!%20I%20want%20the%20STANDARD%20package." target="_blank">Buy Now</a>
+    </div>
+
+    <!-- PREMIUM -->
+    <div class="card premium">
+      <div class="card-header">
+        <h2>PREMIUM</h2>
+        <div>$50 - Listings, A+ Content & Analytics</div>
+        <div class="price">$50.00</div>
+        <div>Per Month</div>
+      </div>
+      <div class="features">
+        <ul>
+          <li>Delivery Time: 14 days</li>
+          <li>Number of Revisions: 2</li>
+          <li>Number of Data Points: 10</li>
+          <li>Source Files</li>
+          <li>Commercial Use</li>
+          <li>Conduct Research</li>
+          <li>Post to Infographic Sites</li>
+        </ul>
+      </div>
+      <a class="buy-btn" href="https://t.me/amzlistingdesign?text=Hello!%20I%20want%20the%20PREMIUM%20package." target="_blank">Buy Now</a>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
